@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/current_proect"
+            android:icon="@mipmap/ic_home_black_24dp"
+            android:title="CurrentProject" />
+        <!--<item
+            android:id="@+id/nav_photos"
+            android:icon="@mipmap/ic_photo_library_black_24dp"
+            android:title="Help" />
+        <item
+            android:id="@+id/nav_movies"
+            android:icon="@mipmap/ic_local_movies_black_24dp"
+            android:title="Feedback" />
+
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@mipmap/ic_notifications_black_24dp"
+            android:title="Related apps" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@mipmap/ic_settings_black_24dp"
+            android:title="Setting" />-->
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@mipmap/ic_settings_black_24dp"
+            android:title="Logout"/>
+    </group>
+
+
+
+</menu>

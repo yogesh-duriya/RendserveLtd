@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="rendserve.rendserveltd.fragment.PhotoFragement"
+    android:background="@color/black_color"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="85dp"
+            android:layout_height="110dp"
+            android:layout_alignTop="@+id/img1"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:background="@drawable/imagebackgroundne"
+            android:src="@drawable/ic_camera"
+            app:layout_constraintEnd_toEndOf="@+id/textView13"
+            app:layout_constraintStart_toStartOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="85dp"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/img2"
+            android:layout_toRightOf="@+id/img2"
+            android:background="@drawable/imagebackgroundne"
+            android:src="@drawable/ic_camera"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView13"
+            app:layout_constraintHorizontal_bias="0.452"
+            app:layout_constraintStart_toStartOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="85dp"
+            android:layout_height="110dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:padding="10dp"
+            android:background="@drawable/imagebackgroundne"
+            android:src="@drawable/ic_camera"
+            app:layout_constraintEnd_toEndOf="@+id/textView13"
+            app:layout_constraintHorizontal_bias="0.452"
+            app:layout_constraintStart_toStartOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="85dp"
+            android:layout_height="110dp"
+            android:padding="10dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/imagebackgroundne"
+            android:src="@drawable/ic_camera" />
+
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_width="85dp"
+            android:layout_height="110dp"
+            android:padding="10dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/imagebackgroundne"
+            android:src="@drawable/ic_camera" />
+
+        <ImageView
+            android:id="@+id/img6"
+            android:layout_width="85dp"
+            android:layout_height="110dp"
+            android:padding="10dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/imagebackgroundne"
+            android:src="@drawable/ic_camera" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/img7"
+            android:layout_width="85dp"
+            android:layout_height="110dp"
+            android:padding="10dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/imagebackgroundne"
+            android:src="@drawable/ic_camera" />
+
+        <ImageView
+            android:id="@+id/img8"
+            android:layout_width="85dp"
+            android:layout_height="110dp"
+            android:padding="10dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/imagebackgroundne"
+            android:src="@drawable/ic_camera" />
+
+        <ImageView
+            android:id="@+id/img9"
+            android:layout_width="85dp"
+            android:layout_height="110dp"
+            android:padding="10dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/imagebackgroundne"
+            android:src="@drawable/ic_camera" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <ImageView
+            android:id="@+id/img10"
+            android:layout_width="85dp"
+            android:layout_height="110dp"
+            android:padding="10dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/imagebackgroundne"
+            android:src="@drawable/ic_camera" />
+
+        <ImageView
+            android:id="@+id/img11"
+            android:layout_width="85dp"
+            android:layout_height="110dp"
+            android:padding="10dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/imagebackgroundne"
+            android:src="@drawable/ic_camera" />
+
+        <ImageView
+            android:id="@+id/img12"
+            android:layout_width="85dp"
+            android:layout_height="110dp"
+            android:padding="10dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/imagebackgroundne"
+            android:src="@drawable/ic_camera" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

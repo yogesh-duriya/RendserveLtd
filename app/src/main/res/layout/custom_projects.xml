@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="0dp"
+        android:padding="15dp"
+        android:background="@drawable/round_white_projects">
+
+        <RelativeLayout
+            android:id="@+id/rl_project_logo"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:background="@drawable/round_grey_setting">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_settings"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/rl_project_logo"
+            android:layout_toLeftOf="@+id/iv_next"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/tv_project_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="project name"
+                android:textColor="@color/black"
+                android:layout_marginTop="3dp"/>
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="project date"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_next"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cross"
+        android:layout_margin="2dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,1174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="rendserve.rendserveltd.Activity.NewDailyReport"
+    tools:showIn="@layout/activity_new_daily_report">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingConstraints"></LinearLayout>
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="200dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:hint="WEATHER"
+                app:layout_constraintEnd_toStartOf="@+id/textView22"
+                app:layout_constraintHorizontal_bias="0.43"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="12dp"
+                android:text="05/12/2017"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <EditText
+                android:id="@+id/et_temp_type"
+                android:layout_width="66dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/edittext"
+                android:clickable="false"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp"
+                android:text="℃"
+                app:layout_constraintStart_toStartOf="@+id/textView21"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <EditText
+                android:id="@+id/et_temp"
+                android:layout_width="79dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:paddingLeft="5dp"
+                android:text="24"
+                android:inputType="numberDecimal"
+                app:layout_constraintStart_toEndOf="@+id/et_temp_type"
+                app:layout_constraintTop_toTopOf="@+id/et_weather"
+                />
+
+            <EditText
+                android:id="@+id/et_weather"
+                android:layout_width="159dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:text="Mist"
+                android:paddingLeft="5dp"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="@+id/textView22"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/et_temp"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="47dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="C/F"
+                app:layout_constraintBottom_toTopOf="@+id/et_temp_type"
+                app:layout_constraintStart_toStartOf="@+id/et_temp_type" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginEnd="8dp"
+                android:text="Temp."
+                app:layout_constraintBottom_toBottomOf="@+id/et_temp"
+                app:layout_constraintEnd_toEndOf="@+id/et_temp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/et_temp" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginEnd="8dp"
+                android:text="Weather"
+                app:layout_constraintBottom_toBottomOf="@+id/et_weather"
+                app:layout_constraintEnd_toEndOf="@+id/et_weather"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/et_weather" />
+
+            <EditText
+                android:id="@+id/et_humidity"
+                android:layout_width="174dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:text="29"
+                android:paddingLeft="5dp"
+                android:inputType="numberDecimal"
+                app:layout_constraintStart_toStartOf="@+id/et_temp_type"
+                app:layout_constraintTop_toBottomOf="@+id/et_temp_type" />
+
+            <EditText
+                android:id="@+id/et_pressure"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:text="1010"
+                android:paddingLeft="5dp"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="@+id/et_weather"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/et_humidity"
+                app:layout_constraintTop_toBottomOf="@+id/et_weather" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginEnd="8dp"
+                android:text="Humidity(%)"
+                app:layout_constraintBottom_toBottomOf="@+id/et_humidity"
+                app:layout_constraintEnd_toEndOf="@+id/et_humidity"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/et_humidity" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginEnd="8dp"
+                android:text="Time of visit"
+                app:layout_constraintBottom_toBottomOf="@+id/et_pressure"
+                app:layout_constraintEnd_toEndOf="@+id/et_pressure"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/et_pressure" />
+
+            <CheckBox
+                android:id="@+id/cb_enter_weather"
+                android:layout_width="287dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Enter weather manually"
+                app:layout_constraintEnd_toEndOf="@+id/et_pressure"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/et_humidity"
+                app:layout_constraintTop_toBottomOf="@+id/et_humidity" />
+
+            <!--<android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_list"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cb_enter_weather"
+                >
+
+            </android.support.v7.widget.RecyclerView>-->
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cb_enter_weather"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/firstText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/arrow_righttt"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="ANY DELAYS CAUSED BY WEATHER"
+                        android:textStyle="bold"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/firstLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_below="@+id/layout1"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.design.widget.AppBarLayout
+                        android:id="@+id/appBarLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white">
+
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/tabLayout"
+                            style="@style/MyStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tabGravity="fill"
+                            app:tabMode="fixed"
+                            app:tabSelectedTextColor="@color/black"
+                            app:tabTextColor="@color/black_overlay" />
+
+                    </android.support.design.widget.AppBarLayout>
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/appBarLayout"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/firstLayout"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/secondtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/arrow_righttt"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="WORK PERFORMED TODAY"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/SecondLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="540dp"
+                    android:layout_below="@+id/layout2"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.design.widget.AppBarLayout
+                        android:id="@+id/appBarLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white">
+
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/tabLayout2"
+                            style="@style/MyStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tabGravity="fill"
+                            app:tabMode="fixed"
+                            app:tabSelectedTextColor="@color/black"
+                            app:tabTextColor="@color/black_overlay" />
+
+                    </android.support.design.widget.AppBarLayout>
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/appBarLayout2"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/SecondLayout"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/thirdtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/arrow_righttt"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="SUBCONTRACTOR'S PROGRESS"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/thirdLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_below="@+id/layout3"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.design.widget.AppBarLayout
+                        android:id="@+id/appBarLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white">
+
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/tabLayout3"
+                            style="@style/MyStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tabGravity="fill"
+                            app:tabMode="fixed"
+                            app:tabSelectedTextColor="@color/black"
+                            app:tabTextColor="@color/black_overlay" />
+
+                    </android.support.design.widget.AppBarLayout>
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/appBarLayout3"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/thirdLayout"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/fourthdtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/arrow_righttt"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="ANY ACCIDENTS ON SITE TODAY?"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/fourLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_below="@+id/layout4"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.design.widget.AppBarLayout
+                        android:id="@+id/appBarLayout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white">
+
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/tabLayout4"
+                            style="@style/MyStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tabGravity="fill"
+                            app:tabMode="fixed"
+                            app:tabSelectedTextColor="@color/black"
+                            app:tabTextColor="@color/black_overlay" />
+
+                    </android.support.design.widget.AppBarLayout>
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/appBarLayout4"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/fourLayout"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/fivehdtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/arrow_righttt"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="EXTRA WORK REQUESTS"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/fiveLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_below="@+id/layout5"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.design.widget.AppBarLayout
+                        android:id="@+id/appBarLayout5"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white">
+
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/tabLayout5"
+                            style="@style/MyStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tabGravity="fill"
+                            app:tabMode="fixed"
+                            app:tabSelectedTextColor="@color/black"
+                            app:tabTextColor="@color/black_overlay" />
+
+                    </android.support.design.widget.AppBarLayout>
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/appBarLayout5"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/fiveLayout"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/sixhdtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/arrow_righttt"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="MATERIAL PURCHASE/RECIEVED"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sixLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_below="@+id/layout6"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.design.widget.AppBarLayout
+                        android:id="@+id/appBarLayout6"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white">
+
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/tabLayout6"
+                            style="@style/MyStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tabGravity="fill"
+                            app:tabMode="fixed"
+                            app:tabSelectedTextColor="@color/black"
+                            app:tabTextColor="@color/black_overlay" />
+
+                    </android.support.design.widget.AppBarLayout>
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/appBarLayout6"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/sixLayout"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/sevenhdtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/arrow_righttt"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="QUALITY CONTROL"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sevenLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_below="@+id/layout7"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.design.widget.AppBarLayout
+                        android:id="@+id/appBarLayout7"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white">
+
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/tabLayout7"
+                            style="@style/MyStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tabGravity="fill"
+                            app:tabMode="fixed"
+                            app:tabSelectedTextColor="@color/black"
+                            app:tabTextColor="@color/black_overlay" />
+
+                    </android.support.design.widget.AppBarLayout>
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/appBarLayout7"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout8"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/sevenLayout"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/eighttext"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/arrow_righttt"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="SAFETY OBSERVATIONS"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/eightLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_below="@+id/layout8"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.design.widget.AppBarLayout
+                        android:id="@+id/appBarLayout8"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white">
+
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/tabLayout8"
+                            style="@style/MyStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tabGravity="fill"
+                            app:tabMode="fixed"
+                            app:tabSelectedTextColor="@color/black"
+                            app:tabTextColor="@color/black_overlay" />
+
+                    </android.support.design.widget.AppBarLayout>
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/appBarLayout8"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout9"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/eightLayout"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/ninetext"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/arrow_righttt"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="ANY SCHEDULES DELAYS?"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/nineLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_below="@+id/layout9"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.design.widget.AppBarLayout
+                        android:id="@+id/appBarLayout9"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white">
+
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/tabLayout9"
+                            style="@style/MyStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tabGravity="fill"
+                            app:tabMode="fixed"
+                            app:tabSelectedTextColor="@color/black"
+                            app:tabTextColor="@color/black_overlay" />
+
+                    </android.support.design.widget.AppBarLayout>
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/appBarLayout9"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout10"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/nineLayout"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/tentext"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/arrow_righttt"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="WHAT ELSE?"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tenLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_below="@+id/layout10"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.design.widget.AppBarLayout
+                        android:id="@+id/appBarLayout10"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white">
+
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/tabLayout10"
+                            style="@style/MyStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tabGravity="fill"
+                            app:tabMode="fixed"
+                            app:tabSelectedTextColor="@color/black"
+                            app:tabTextColor="@color/black_overlay" />
+
+                    </android.support.design.widget.AppBarLayout>
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/appBarLayout10"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/elevenLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tenLayout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/worklogtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/arrow_righttt"
+                        android:gravity="center_vertical"
+                        android:text="WORK LOGS - LABOR"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/black_overlay" />
+
+                    <RelativeLayout
+                        android:id="@+id/editText16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/worklogtext"
+                        android:ems="10"
+                        android:background="@drawable/edittext"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="364dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_labour"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        </android.support.v7.widget.RecyclerView>
+
+                        <TextView
+                            android:id="@+id/tv_add_labor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="98dp"
+                            android:textColor="@color/black"
+                            android:layout_marginRight="98dp"
+                            android:text="Tab Add new button"
+                            android:padding="10dp"/>
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editText16"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="ADD NEW"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/button"
+                        android:textColor="@color/white"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        tools:layout_editor_absoluteX="159dp"
+                        tools:layout_editor_absoluteY="415dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/button"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/black_overlay"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/twelvetext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/elevenLayout">
+                    <TextView
+                        android:id="@+id/worklogsubcontractor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/arrow_righttt"
+                        android:gravity="center_vertical"
+                        android:text="WORK LOGS - SUBCONTRACTOR"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/black_overlay" />
+
+                    <RelativeLayout
+                        android:id="@+id/editText17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/worklogsubcontractor"
+                        android:ems="10"
+                        android:background="@drawable/edittext"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="364dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_constructor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        </android.support.v7.widget.RecyclerView>
+
+                        <TextView
+                            android:id="@+id/tv_add_constructor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="98dp"
+                            android:textColor="@color/black"
+                            android:layout_marginRight="98dp"
+                            android:text="Tab Add new button"
+                            android:padding="10dp"/>
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editText17"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="ADD NEW"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/button"
+                        android:textColor="@color/white"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        tools:layout_editor_absoluteX="159dp"
+                        tools:layout_editor_absoluteY="415dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/button2"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/black_overlay"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/thrteentext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/twelvetext">
+                    <TextView
+                        android:id="@+id/worklogcost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/arrow_righttt"
+                        android:gravity="center_vertical"
+                        android:text="RENTAL/COST"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/black_overlay" />
+
+                    <RelativeLayout
+                        android:id="@+id/editText18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/worklogcost"
+                        android:ems="10"
+                        android:background="@drawable/edittext"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="364dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_rental"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        </android.support.v7.widget.RecyclerView>
+
+                        <TextView
+                            android:id="@+id/tv_add_rental"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="98dp"
+                            android:textColor="@color/black"
+                            android:layout_marginRight="98dp"
+                            android:text="Tab Add new button"
+                            android:padding="10dp"/>
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editText18"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="ADD NEW"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/button"
+                        android:textColor="@color/white"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        tools:layout_editor_absoluteX="159dp"
+                        tools:layout_editor_absoluteY="415dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/sendsave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/thrteentext">
+                    <TextView
+                        android:id="@+id/workemail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/arrow_righttt"
+                        android:gravity="center_vertical"
+                        android:text="SEND THIS REPORT TO:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/black" />
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/workemail"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/black_overlay"/>
+
+                    <EditText
+                        android:id="@+id/editemail"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext"
+                        android:ems="10"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:hint="Enter email"
+                        android:layout_below="@+id/view"
+                        android:inputType="textPersonName"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_overlay"
+                        android:layout_below="@+id/editemail"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="(separate email addresses with commas to send it out to multiple recipients)"/>
+                </RelativeLayout>
+                <Button
+                    android:id="@+id/save_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sendsave"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button"
+                    android:text="SAVE &amp; SEND"/>
+            </RelativeLayout>
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>
